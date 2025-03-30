@@ -121,7 +121,6 @@ M_{ortho}=
 0&0&\frac{2}{f-n}&0\\
 0&0&0&1\\
 \end{array}\right)
-
 \left(\begin{array}{c}
 1&0&0&-\frac{r+l}{2}\\
 0&1&0&-\frac{t+b}{2}\\
