@@ -83,7 +83,7 @@ $$
 因此有
 
 $$
-\left\lbrace
+\left\{
 \begin{array}{c}
 -nA+B=-n^2\\
 -fA+B=-f^2
