@@ -83,14 +83,14 @@ $$
 因此有
 
 $$
-\left\{
+\left\lbrace
 \begin{array}{c}
 -nA+B=-n^2\\
 -fA+B=-f^2
 \end{array}
 \right.
 \rightarrow
-\left\{
+\left\lbrace
 \begin{array}{l}
 A=n+f\\
 B=nf
