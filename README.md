@@ -7,6 +7,7 @@
  <img src="./assets/image-20250328163118457.png" alt="image-20250328163118457" style="zoom:50%;" />
 
 这里假设`n`和`z`均为整数，代表距离，首先对于任意frustum内的点有：
+
 $$
 \left(\begin{array}{c}
 x \\
@@ -20,7 +21,9 @@ ny\\
 -z
 \end{array}\right)
 $$
+
 可知：
+
 $$
 M_{persp->ortho}=
 \left(\begin{array}{c}
@@ -30,7 +33,9 @@ n&0&0&0\\
 0&0&-1&0
 \end{array}\right)
 $$
+
 根据近平面内任意一点坐标不变有
+
 $$
 \left(\begin{array}{c}
 n&0&0&0\\
@@ -51,7 +56,9 @@ ny\\
 n
 \end{array}\right)
 $$
+
 根据远平面内中心点坐标不变有
+
 $$
 \left(\begin{array}{c}
 n&0&0&0\\
@@ -73,8 +80,8 @@ f
 \end{array}\right)
 $$
 
-
 因此有
+
 $$
 \left\{
 \begin{array}{c}
@@ -90,7 +97,9 @@ B=nf
 \end{array}
 \right.
 $$
+
 所以将透视投影转换为正交投影的矩阵$M_{persp->ortho}$可写作：
+
 $$
 M_{persp->ortho}=
 \left(\begin{array}{c}
@@ -100,7 +109,9 @@ n&0&0&0\\
 0&0&-1&0
 \end{array}\right)
 $$
+
 接下来进行正交投影 
+
 $$
 M_{ortho}=
 \left(\begin{array}{c}
@@ -116,12 +127,14 @@ M_{ortho}=
 0&0&1&-\frac{n+f}{2}\\
 0&0&0&1\\
 \end{array}\right)
+
 $$
 定义视角为`fovY`，宽高比`aspect =right/top`，`r=-l`、`t=-b`可根据`aspect`、`fovY`、`n`和`f`的值得到`l、n、b、t`的具体值
 
  <img src="./assets/image-20250328175746664.png" alt="image-20250328175746664" style="zoom: 67%;" />
 
 最终投影矩阵为
+
 $$
 M=
 \left(\begin{array}{c}
