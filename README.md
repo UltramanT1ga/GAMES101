@@ -83,7 +83,7 @@ $$
 因此有
 
 $$
-\left\{
+\left\lbrace
 \begin{array}{c}
 -nA+B=-n^2\\
 -fA+B=-f^2
@@ -97,6 +97,7 @@ B=nf
 \end{array}
 \right.
 $$
+
 
 所以将透视投影转换为正交投影的矩阵$M_{persp->ortho}$可写作：
 
@@ -127,8 +128,8 @@ M_{ortho}=
 0&0&1&-\frac{n+f}{2}\\
 0&0&0&1\\
 \end{array}\right)
-
 $$
+
 定义视角为`fovY`，宽高比`aspect =right/top`，`r=-l`、`t=-b`可根据`aspect`、`fovY`、`n`和`f`的值得到`l、n、b、t`的具体值
 
  <img src="./assets/image-20250328175746664.png" alt="image-20250328175746664" style="zoom: 67%;" />
