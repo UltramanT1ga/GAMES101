@@ -274,6 +274,7 @@ void rst::rasterizer::rasterize_triangle(
       int idx = get_index(x, y);
       if (insideTriangle(x + 0.5, y + 0.5, t.v)) {
           auto [alpha, beta, gamma] = computeBarycentric2D(x, y, t.v);
+          // 透视校正插值
           float Z = 1.0 / (alpha / v[0].w() + beta / v[1].w() + gamma / v[2].w());
           float zp = alpha * v[0].z() / v[0].w() + beta * v[1].z() / v[1].w() + gamma * v[2].z() / v[2].w(); 
           zp *= Z;

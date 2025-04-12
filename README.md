@@ -133,7 +133,7 @@ $$
 
  <img src="./assets/image-20250328175746664.png" alt="image-20250328175746664" style="zoom: 67%;" />
 
-最终投影矩阵为
+因此投影矩阵为
 
 $$
 M=
@@ -141,6 +141,20 @@ M=
 \frac{n}{r}&0&0&0\\
 0&\frac{n}{t}&0&0\\
 0&0&\frac{f+n}{f-n}&\frac{2nf}{f-n}\\
+0&0&-1&0
+\end{array}\right)
+$$
+
+
+但为了保证深度测试时深度越小越靠近摄像机，最后还要乘上一个镜像翻转矩阵
+
+
+$$
+M=
+\left(\begin{array}{c}
+\frac{n}{r}&0&0&0\\
+0&\frac{n}{t}&0&0\\
+0&0&-\frac{f+n}{f-n}&-\frac{2nf}{f-n}\\
 0&0&-1&0
 \end{array}\right)
 $$
