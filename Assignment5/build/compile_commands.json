@@ -1,0 +1,20 @@
+[
+{
+  "directory": "D:/OneDrive/Study/GAMES101/Assignment5/build",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -Wall -Wextra -pedantic -Wshadow -Wreturn-type -o CMakeFiles\\RayTracing.dir\\main.cpp.obj -c D:\\OneDrive\\Study\\GAMES101\\Assignment5\\main.cpp",
+  "file": "D:/OneDrive/Study/GAMES101/Assignment5/main.cpp",
+  "output": "CMakeFiles/RayTracing.dir/main.cpp.obj"
+},
+{
+  "directory": "D:/OneDrive/Study/GAMES101/Assignment5/build",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -Wall -Wextra -pedantic -Wshadow -Wreturn-type -o CMakeFiles\\RayTracing.dir\\Scene.cpp.obj -c D:\\OneDrive\\Study\\GAMES101\\Assignment5\\Scene.cpp",
+  "file": "D:/OneDrive/Study/GAMES101/Assignment5/Scene.cpp",
+  "output": "CMakeFiles/RayTracing.dir/Scene.cpp.obj"
+},
+{
+  "directory": "D:/OneDrive/Study/GAMES101/Assignment5/build",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -Wall -Wextra -pedantic -Wshadow -Wreturn-type -o CMakeFiles\\RayTracing.dir\\Renderer.cpp.obj -c D:\\OneDrive\\Study\\GAMES101\\Assignment5\\Renderer.cpp",
+  "file": "D:/OneDrive/Study/GAMES101/Assignment5/Renderer.cpp",
+  "output": "CMakeFiles/RayTracing.dir/Renderer.cpp.obj"
+}
+]
